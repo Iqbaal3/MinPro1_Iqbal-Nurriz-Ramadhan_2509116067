@@ -96,9 +96,7 @@ for nama, berat in konsumsi:
 print(" ======================")
 print(" Total Asupan Hari Ini ")
 print(" ======================")
-for nama, berat in konsumsi:
-    print(f"- {nama} sebanyak {berat} gram")
 print("================================")
 print(f"Kalori : {total_kalori} Kalori")
-
 print(f"Protein: {total_protein} Gram")
+
