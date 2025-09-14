@@ -17,5 +17,6 @@ Cara kerjanya yaitu pengguna Memilih diantara 4 perintah yang di sediakan pada M
 
 Berikut FlowChart dari Program "Pelacak Asupan Kalori& Protein Harian" :
 
+<img width="1616" height="2049" alt="Image" src="https://github.com/user-attachments/assets/b5622d10-619f-4818-9395-9f55bdea4ece" />
 
 
