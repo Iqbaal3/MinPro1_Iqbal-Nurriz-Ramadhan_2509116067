@@ -31,16 +31,20 @@ while True:
 
     #Perintah Hapus
     elif perintah == "Hapus":
-        for i in range(len(konsumsi)):
-            nama, berat = konsumsi[i]
-            print(f"{i + 1} {nama}: {berat} gram")
-        
-        nomor = int(input("Masukkan nomor makanan yang ingin dihapus: ")) - 1
-        if 0 <= nomor < len(konsumsi):
-            terhapus = konsumsi.pop(nomor)
-            print(f"{terhapus[0]} sebanyak {terhapus[1]} gram telah dihapus.")
+        i = 1
+        if i < len(konsumsi):
+            for i in range(len(konsumsi)):
+                nama, berat = konsumsi[i]
+                print(f"{i + 1} {nama}: {berat} gram")
+            
+            nomor = int(input("Masukkan nomor makanan yang ingin dihapus: ")) - 1
+            if 0 <= nomor < len(konsumsi):
+                terhapus = konsumsi.pop(nomor)
+                print(f"{terhapus[0]} sebanyak {terhapus[1]} gram telah dihapus.")
+            else:
+                print("Nomor tidak valid")
         else:
-            print("Nomor tidak valid")
+            Print("Belum ada makanan yang diinput")
         continue
 
     #Perintah Tambah Makanan
@@ -96,4 +100,5 @@ for nama, berat in konsumsi:
     print(f"- {nama} sebanyak {berat} gram")
 print("================================")
 print(f"Kalori : {total_kalori} Kalori")
+
 print(f"Protein: {total_protein} Gram")
